@@ -12,7 +12,8 @@ public class Mapper {
         user.setPassword(request.getPassword());
     }
 
-    public static void map(LoginRequest loginRequest, User user){
+    public static void approve(LoginRequest loginRequest, User user){
+        user.setUsername(loginRequest.getUsername());
         user.setEmail(loginRequest.getEmail());
         user.setPassword(loginRequest.getPassword());
 
